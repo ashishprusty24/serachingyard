@@ -22,11 +22,12 @@ import styles from "./productdetail.module.css";
 import { useParams } from "react-router-dom";
 import Deliverydetails from "../component/Deliverydetails";
 import Imageslide from "../component/Imageslide";
+import Navbar from "../component/Navbar";
 const Productdetailpage = () => {
   const [data, setdata] = useState([]);
-  const [name, setname] = useState("");
+  const [name, setname] = useState();
   const [size, setsize] = useState("");
-  const [qty, setqty] = useState();
+  const [qty, setqty] = useState("");
   const [color, setcolor] = useState();
   const params = useParams();
   const handlegetdata = () => {
@@ -39,6 +40,9 @@ const Productdetailpage = () => {
   useEffect(() => {
     handlegetdata();
   }, []);
+
+  
+  
   console.log(data);
 
   const handleaddtocart = () => {
@@ -60,7 +64,8 @@ const Productdetailpage = () => {
 
   if (data.length == 0) return <div>Loading...</div>;
   return (
-    <Box>
+      <Box>
+        <Navbar  />
       <Box className={styles.pcontainer}>
         <Box w="48%" marginTop="30px">
           <Imageslide img_arr={data.img_arr} />
