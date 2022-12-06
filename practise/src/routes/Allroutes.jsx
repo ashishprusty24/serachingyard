@@ -1,7 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Product from "../component/Product";
-import Productdetailpage from "../component/Productdetailpage";
+import Product from "../pages/Product";
+
+import Productdetailpage from "../pages/Productdetailpage";
+
 
 const Allroutes = () => {
   return (
