@@ -2,6 +2,8 @@
 
 ## To run this application 1st start the server  by npm run server
 
+server will run on the http://localhost:7070/
+
 <h1 align="center">Searching yard assignment</h1>
 
 <h2 align="center">Tech Stack</h2>
