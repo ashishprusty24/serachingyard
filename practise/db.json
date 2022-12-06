@@ -1,0 +1,10 @@
+{
+  "products":[
+      {"id":1, "name": "classic pull over hoodie" , "price":38.99,"description":"classic fit , unisex ", "img_arr":["https://cdn.shopify.com/s/files/1/0616/7494/6800/products/1-edited-576.jpg?v=1640097360","https://m.media-amazon.com/images/I/61oIQ4sgayL._UL1333_.jpg"]},
+      {"id":2, "name": "classic pull over hoodie" , "price":38.99,"description":"classic fit , unisex "},
+      {"id":3, "name": "classic pull over hoodie" , "price":38.99,"description":"classic fit , unisex "},
+      {"id":4, "name": "classic pull over hoodie" , "price":38.99,"description":"classic fit , unisex "},
+      {"id":5, "name": "classic pull over hoodie" , "price":38.99,"description":"classic fit , unisex "},
+      {"id":6, "name": "classic pull over hoodie" , "price":38.99,"description":"classic fit , unisex "}
+  ]
+}
