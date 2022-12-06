@@ -3,6 +3,7 @@ import './App.css';
 
 import Allroutes from './routes/Allroutes';
 import Navbar from './component/Navbar';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     {/* <Productdetailpage/> */}
    
     <Allroutes/>
+  
     </div>
   );
 }

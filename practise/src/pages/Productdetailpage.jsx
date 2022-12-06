@@ -41,8 +41,6 @@ const Productdetailpage = () => {
     handlegetdata();
   }, []);
 
-  
-  
   console.log(data);
 
   const handleaddtocart = () => {
@@ -64,8 +62,8 @@ const Productdetailpage = () => {
 
   if (data.length == 0) return <div>Loading...</div>;
   return (
-      <Box>
-        <Navbar  />
+    <Box>
+      <Navbar />
       <Box className={styles.pcontainer}>
         <Box w="48%" marginTop="30px">
           <Imageslide img_arr={data.img_arr} />

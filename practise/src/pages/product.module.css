@@ -19,7 +19,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-@media all and (min-width: 500px) and (max-width: 1020px){
+@media all and (min-width: 500px) and (max-width: 1020px) {
     .productcontainer {
         width: 80%;
         margin: auto;

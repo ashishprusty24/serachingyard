@@ -1,18 +1,20 @@
-.selectimg{
+.selectimg {
     width: 100px;
     height: 100px;
 }
-button:focus{
+
+button:focus {
     border: 2px solid black;
 }
-.pcontainer{
+
+.pcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@media all and (min-width: 500px) and (max-width: 1020px){
-    .pcontainer{
+@media all and (min-width: 500px) and (max-width: 1020px) {
+    .pcontainer {
         display: flex;
         flex-direction: column;
     }

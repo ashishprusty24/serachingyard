@@ -4,6 +4,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../component/Navbar";
 import styles from "./product.module.css";
 const Product = () => {
   const [product, setproduct] = useState([]);
@@ -16,17 +17,20 @@ const Product = () => {
   }, []);
 
   return (
-    <div className= {styles.productcontainer}>
-      {product.map((data) => (
-        <Link to={`/product/${data._id}`}>
-          <div >
-            <img  className= {styles.productimg} src={data.img_arr[0]} alt="" />
-            <Heading> {data.name_arr[0]} </Heading>
-            <Text> {data.price} </Text>
-          </div>
-        </Link>
-      ))}
-    </div>
+    <>
+      <Navbar />
+      <div className={styles.productcontainer}>
+        {product.map((data) => (
+          <Link to={`/product/${data._id}`}>
+            <div>
+              <img className={styles.productimg} src={data.img_arr[0]} alt="" />
+              <Heading> {data.name_arr[0]} </Heading>
+              <Text> {data.price} </Text>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 };
 

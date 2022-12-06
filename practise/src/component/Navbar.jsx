@@ -23,10 +23,12 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div class="nav_logo">
+        <Link to="/" >
         <img
           src="https://www.searchingyard.com/_next/static/media/icon.e85db0e4.svg"
           alt="logo"
         />
+        </Link>
       </div>
       <div className={styles.nav_list}>
         <Link to="/product">
